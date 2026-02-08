@@ -187,7 +187,7 @@ description: 'Brief description'
 link: 'https://project-url.com'
 github: 'https://github.com/user/repo' # Optional
 tags: ['astro', 'svelte']
-types: ['commercial', 'open-source', 'social']
+types: ['commercial', 'open-source', 'social', 'research']
 image: '/images/project.png' # Optional
 order: 0 # Display order (lower = first)
 directLink: true # Link directly to project vs detail page
