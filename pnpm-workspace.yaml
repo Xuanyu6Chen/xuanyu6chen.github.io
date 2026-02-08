@@ -1,0 +1,4 @@
+onlyBuiltDependencies:
+  - '@evilmartians/lefthook'
+  - esbuild
+  - sharp

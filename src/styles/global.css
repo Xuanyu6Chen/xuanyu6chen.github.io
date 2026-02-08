@@ -1,0 +1,292 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+/* Initial typography improvements to reduce chains */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('@fontsource/outfit/files/outfit-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url('@fontsource/outfit/files/outfit-latin-700-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('@fontsource-variable/inter/files/inter-latin-standard-normal.woff2') format('woff2');
+}
+
+@theme {
+  /* 1. Core Colors */
+  --color-background: #ffffff;
+  --color-foreground: #09090b;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #09090b;
+
+  --color-popover: #ffffff;
+  --color-popover-foreground: #09090b;
+
+  --color-primary: #18181b;
+  --color-primary-foreground: #fafafa;
+
+  --color-secondary: #f4f4f5;
+  --color-secondary-foreground: #18181b;
+
+  --color-muted: #f4f4f5;
+  --color-muted-foreground: #18181b; /* Zinc 900 for absolute contrast compliance */
+
+  --color-accent: #f4f4f5;
+  --color-accent-foreground: #18181b;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafafa;
+
+  --color-border: #e4e4e7;
+  --color-input: #e4e4e7;
+  --color-ring: #18181b;
+
+  /* 2. Constants */
+  --font-sans: 'Outfit', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --radius-lg: 0.75rem;
+  --radius-md: calc(0.75rem - 2px);
+  --radius-sm: calc(0.75rem - 4px);
+
+  /* 3. Responsive Scaling (4K & Mobile Optimization) */
+  --breakpoint-3xl: 1920px;
+  --breakpoint-4xl: 2560px;
+}
+
+@layer base {
+  .dark {
+    --color-background: #212737;
+    --color-foreground: #eaedf3;
+    --color-card: #303446; /* Catppuccin Frappe Base */
+    --color-card-foreground: #eaedf3;
+    --color-popover: #303446;
+    --color-popover-foreground: #eaedf3;
+    --color-primary: #f2d5cf; /* Lighter accent for Catppuccin harmony */
+    --color-primary-foreground: #303446;
+    --color-secondary: #292c3c; /* Mantle */
+    --color-secondary-foreground: #eaedf3;
+    --color-muted: #303446;
+    --color-muted-foreground: #d1d5dc;
+    --color-accent: #292c3c;
+    --color-accent-foreground: #eaedf3;
+    --color-destructive: #ef4444;
+    --color-destructive-foreground: #fafafa;
+    --color-border: #494d64; /* Surface 1 */
+    --color-input: #494d64;
+    --color-ring: #f2d5cf;
+  }
+
+  /* Fluid Typography & Scaling */
+  html {
+    color-scheme: light;
+    /* Base font size scales between 16px on mobile and 18px on 4K */
+    font-size: clamp(16px, 0.5vw + 14px, 20px);
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  @media (min-width: 2560px) {
+    html {
+      font-size: 22px; /* Extra boost for 4K */
+    }
+  }
+
+  * {
+    border-color: var(--color-border);
+  }
+
+  *::selection {
+    background-color: var(--color-primary) !important;
+    color: var(--color-primary-foreground) !important;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply tracking-tight font-black;
+    line-height: 1.1;
+  }
+
+  a {
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover {
+    color: var(--color-primary);
+  }
+
+  input,
+  textarea,
+  select {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    border-color: var(--color-border);
+  }
+
+  input::placeholder {
+    color: var(--color-muted-foreground);
+    opacity: 0.5;
+  }
+}
+
+@layer utilities {
+  .text-main {
+    color: var(--color-foreground);
+  }
+  .text-muted {
+    color: var(--color-muted-foreground);
+  }
+  .bg-main {
+    background-color: var(--color-background);
+  }
+  .border-main {
+    border-color: var(--color-border);
+  }
+
+  .no-underline {
+    text-decoration: none !important;
+  }
+
+  /* Fluid Container Padding */
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8 xl:px-12 3xl:px-24;
+  }
+}
+
+/* Typography Overrides */
+.prose {
+  --tw-prose-body: var(--color-foreground);
+  --tw-prose-headings: var(--color-foreground);
+  --tw-prose-links: var(--color-foreground);
+  --tw-prose-bold: var(--color-foreground);
+  --tw-prose-counters: var(--color-muted-foreground);
+  --tw-prose-bullets: var(--color-border);
+  --tw-prose-hr: var(--color-border);
+  --tw-prose-quotes: var(--color-foreground);
+  --tw-prose-quote-borders: var(--color-border);
+  --tw-prose-captions: var(--color-muted-foreground);
+  --tw-prose-code: var(--color-foreground);
+  --tw-prose-pre-bg: #f8fafc; /* Subtle off-white for light mode */
+
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+/* Inline code styling */
+.prose code {
+  @apply rounded px-1.5 py-0.5 font-medium font-mono border whitespace-pre-wrap;
+  font-size: 0.875em;
+  background-color: var(--color-secondary);
+  border-color: var(--color-border);
+  color: var(--color-foreground) !important;
+}
+
+.prose code::before,
+.prose code::after {
+  content: none !important;
+}
+
+/* Reset for code blocks */
+.prose pre code,
+.prose .astro-code code {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  font-size: inherit !important;
+  color: inherit !important;
+  font-weight: inherit !important;
+  white-space: inherit !important;
+}
+
+.prose pre,
+.prose .astro-code {
+  margin-top: 2.5rem !important;
+  margin-bottom: 2.5rem !important;
+  padding: 1.5rem !important;
+  border-radius: 6px !important;
+  border: 1px solid var(--color-border) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+  /* Shiki will provide the background via --shiki-light-bg/--shiki-dark-bg */
+}
+
+/* Ensure syntax colors switch correctly with the .dark class */
+.shiki span,
+.astro-code span {
+  color: var(--shiki-light);
+}
+
+.dark .shiki span,
+.dark .astro-code span {
+  color: var(--shiki-dark) !important;
+}
+
+.shiki,
+.astro-code {
+  background-color: var(--shiki-light-bg) !important;
+}
+
+.dark .shiki,
+.dark .astro-code {
+  background-color: var(--shiki-dark-bg) !important;
+  border-color: #494d64 !important; /* Catppuccin Surface 1 */
+}
+
+.dark .prose {
+  --tw-prose-body: #d1d5dc;
+  --tw-prose-headings: #eaedf3;
+  --tw-prose-pre-bg: var(--shiki-dark-bg);
+  --tw-prose-links: var(--color-foreground);
+}
+
+/* Heading anchor links */
+.heading-link {
+  opacity: 0;
+  margin-left: -1.5rem;
+  padding-right: 0.5rem;
+  color: var(--color-muted-foreground);
+  text-decoration: none;
+  font-weight: 400;
+  transition: opacity 0.2s ease;
+}
+
+h1:hover .heading-link,
+h2:hover .heading-link,
+h3:hover .heading-link,
+h4:hover .heading-link,
+h5:hover .heading-link,
+h6:hover .heading-link {
+  opacity: 1;
+}
+
+.heading-link:hover {
+  color: var(--color-primary);
+}

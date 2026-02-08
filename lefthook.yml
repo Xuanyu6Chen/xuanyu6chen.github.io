@@ -1,0 +1,20 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      glob: '*.{js,ts,astro,svelte}'
+      run: pnpm exec eslint {staged_files} --fix --no-warn-ignored
+      stage_fixed: true
+
+    format:
+      glob: '*.{js,ts,astro,svelte,json,css,md}'
+      run: pnpm exec prettier --write {staged_files}
+      stage_fixed: true
+
+pre-push:
+  commands:
+    type-check:
+      run: pnpm check
+
+    lint-all:
+      run: pnpm lint

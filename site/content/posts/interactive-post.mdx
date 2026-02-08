@@ -1,0 +1,87 @@
+---
+title: 'Interactive Post with Svelte'
+description: 'A blog post demonstrating MDX with interactive Svelte components'
+pubDate: 2026-01-20
+tags: ['MDX', 'Svelte', 'Interactive', 'Components', 'TypeScript']
+---
+
+import Counter from '../_components/Counter.svelte';
+import GreetingInput from '../_components/GreetingInput.svelte';
+import Mermaid from '@/components/Mermaid.svelte';
+
+# Interactive Blogging with MDX and Svelte
+
+This post demonstrates the power of **MDX** - combining Markdown with Svelte components!
+
+## Interactive Counter
+
+Click the button below to see Svelte reactivity in action:
+
+<Counter client:load />
+
+## Dynamic Greeting
+
+Type your name to see a personalized greeting:
+
+<GreetingInput client:load />
+
+## Architecture Diagram :rocket:
+
+Here's how our component architecture works:
+
+<Mermaid
+  client:load
+  chart={`
+graph TD
+    A[MDX File] -->|Import| B[Svelte Components]
+    A -->|Write| C[Markdown Content]
+    B -->|Hydrate| D[Interactive UI]
+    C -->|Render| E[Static HTML]
+    D --> F[Final Page]
+    E --> F
+    F -->|Enhanced| G[User Experience]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style F fill:#bbf,stroke:#333,stroke-width:2px
+    style G fill:#bfb,stroke:#333,stroke-width:2px
+`}
+/>
+
+## Why MDX with Svelte?
+
+MDX combines:
+
+1. **Markdown's simplicity** - Easy to write content
+2. **Svelte's interactivity** - Add dynamic components
+3. **Type safety** - Full TypeScript support
+
+### Code Example
+
+Here's the counter component code:
+
+```svelte
+<script lang="ts">
+  import Button from '$lib/components/ui/button/button.svelte';
+  let count = $state(0);
+</script>
+
+<div class="my-6 p-6 border border-border rounded-lg bg-card">
+  <p class="mb-4 text-lg">Current count: <strong>{count}</strong></p>
+  <Button onclick={() => count++}>Increment Counter</Button>
+  <Button variant="outline" onclick={() => (count = 0)} class="ml-2">Reset</Button>
+</div>
+```
+
+## How It Works
+
+In MDX files, you can:
+
+- Write regular Markdown content
+- Import Svelte components
+- Use them with `client:load` directive for hydration
+- Mix static and interactive content
+- Create diagrams with Mermaid :fire:
+
+## Conclusion
+
+With MDX and Svelte, your blog posts can be as interactive as you want them to be!
