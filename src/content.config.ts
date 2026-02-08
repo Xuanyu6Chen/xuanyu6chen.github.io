@@ -76,4 +76,4 @@ const about = defineCollection({
   }),
 });
 
-export const collections = { posts, projects, appearances, about };
+export const collections = { posts, projects, about };
