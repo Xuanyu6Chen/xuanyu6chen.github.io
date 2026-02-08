@@ -1,6 +1,5 @@
-# I'm {author}, developer and designer.
+# I’m {author}, Applied Math & Statistics @ Purdue.
 
-Building premium web experiences with Astro, Svelte, and Tailwind.
-Focused on performance, aesthetics, and clean code.
+I’m focused on quantitative research and data analytics.
 
-I am currently working on open-source tools and sharing my journey through writing.
+I build backtesting pipelines for trading strategies and data/LLM workflows for large-scale text analysis.
