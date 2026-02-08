@@ -1,9 +1,13 @@
 ---
-title: "I'm Astronaut, a software designer and entrepreneur."
+title: "I'm Xuanyu Chen, an Applied Math & Statistics student building data and quant research tools."
 ---
 
-I've been obsessed with computers since I was a kid, though I didn't start coding until I was in my late teens. I'm a self-taught developer who loves the intersection of design and technology.
+I’m an Applied Mathematics & Statistics student at Purdue, focused on quantitative research and data analytics. I like turning messy real-world data into clean datasets, reliable pipelines, and decisions you can defend.
 
-Currently, I'm building **Spaceship**, a modern blog template that combines the power of Astro 5, Svelte 5, and Tailwind 4. This project is my attempt at creating a perfect balance between performance and developer experience.
+Recently, I built a **factor momentum backtesting project** in Python, covering data prep, portfolio construction, transaction costs, and evaluation.
 
-Beyond work, I'm an avid reader, amateur astronomer, and coffee enthusiast. I believe that the best products are built at the intersection of curiosity and craftsmanship.
+Right now I’m working on an **AI syllabus policy analysis** project: collecting public syllabus PDFs, converting them to text, using LLM-assisted extraction to structure policy fields, and building a dataset to support model fine-tuning for more consistent extraction.
+
+I’m actively looking for internships in **quant research**, **data analytics**, and **equity research**, where I can apply math, statistics, programming, and clear communication to real problems.
+
+Beyond work, you’ll usually find me watching anime, playing badminton, or hiking and exploring outdoors.
