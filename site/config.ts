@@ -51,38 +51,41 @@ export interface SiteConfig {
 }
 
 export const SITE: SiteConfig = {
-  author: 'Astronaut',
-  desc: 'Developer and designer building premium web experiences.',
-  title: 'Spaceship',
+  author: 'Xuanyu Chen',
+  desc: 'Applied Math & Statistics @ Purdue | Quant / Data Analytics | Backtesting & NLP/LLM pipelines.',
+  title: 'Xuanyu Chen',
   ogImage: 'og.png',
   lang: 'en-US',
   base: '/',
   website: 'https://xuanyuchen.com',
+
   social: {
-    x: 'https://x.com/astronaut',
-    github: 'https://github.com/astronaut',
-    telegram: 'https://t.me/astronaut',
-    facebook: 'https://facebook.com/astronaut',
+    github: 'https://github.com/Xuanyu6Chen',
+    linkedin: 'https://www.linkedin.com/in/xuanyu-chen-1046672aa/',
+    email: 'mailto:YOUR_EMAIL_HERE',
   },
-  googleAnalyticsId: '', // Example: 'G-XXXXXXXXXX'
+
+  googleAnalyticsId: '',
+
   homeHeroDescription:
-    'Building premium web experiences with Astro, Svelte, and Tailwind. Focused on performance, aesthetics, and clean code. I am currently working on open-source tools and sharing my journey through writing.',
-  blogDescription: 'A collection of thoughts, tutorials, and general web discovery.',
-  projectsDescription: 'Things I’ve built that I’m proud of. Many of them are open-source.',
+    'Purdue Applied Math & Statistics student focused on quantitative research and data analytics. I build backtesting pipelines, analyze financial time-series, and develop data/LLM workflows for large-scale text analysis.',
 
-  // Homepage post counts
-  featuredPostsCount: 3,
-  latestPostsCount: 3,
+  blogDescription:
+    'Short research notes and project writeups: backtesting, markets, data analysis, and NLP/LLMs.',
 
-  // Homepage projects
+  projectsDescription:
+    'Selected projects in quantitative finance, data analytics, and applied machine learning.',
+
+  featuredPostsCount: 0,
+  latestPostsCount: 0,
+
   homeProjects: {
     enabled: true,
     count: 4,
   },
 
-  // CTA (Call-to-Action) block for blog posts
   cta: {
-    enabled: true,
+    enabled: false,
     filePath: 'site/cta.md',
   },
 
@@ -91,19 +94,17 @@ export const SITE: SiteConfig = {
     filePath: 'site/hero.md',
   },
 
-  // Giscus comments configuration
-  // Get your configuration from https://giscus.app
   comments: {
-    enabled: false, // Set to true after filling in the IDs below
-    repo: 'alec-c4/spaceship', // Your GitHub repository
-    repoId: '', // Get from https://giscus.app - enter repo above and copy the value
-    category: 'General', // GitHub Discussions category name
-    categoryId: '', // Get from https://giscus.app - select category and copy the value
+    enabled: false,
+    repo: 'Xuanyu6Chen/xuanyu6chen.github.io',
+    repoId: '',
+    category: 'General',
+    categoryId: '',
     mapping: 'pathname',
     reactionsEnabled: true,
     emitMetadata: false,
     inputPosition: 'bottom',
-    theme: 'preferred_color_scheme', // Automatically matches your site theme
+    theme: 'preferred_color_scheme',
     lang: 'en',
   },
 };
