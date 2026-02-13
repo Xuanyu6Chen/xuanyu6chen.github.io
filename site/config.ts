@@ -62,7 +62,7 @@ export const SITE: SiteConfig = {
   social: {
     github: 'https://github.com/Xuanyu6Chen',
     linkedin: 'https://www.linkedin.com/in/xuanyu-chen-1046672aa/',
-    email: 'mailto:YOUR_EMAIL_HERE',
+    email: 'mailto:Xuanyu.chen3712@gmail.com',
   },
 
   googleAnalyticsId: '',
