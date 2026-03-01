@@ -76,8 +76,8 @@ export const SITE: SiteConfig = {
   projectsDescription:
     'Selected projects in quantitative finance, data analytics, and applied machine learning.',
 
-  featuredPostsCount: 0,
-  latestPostsCount: 0,
+  featuredPostsCount: 3,
+  latestPostsCount: 5,
 
   homeProjects: {
     enabled: true,
