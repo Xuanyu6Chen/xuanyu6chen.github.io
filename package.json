@@ -33,6 +33,7 @@
     "remark-emoji": "^5.0.2",
     "satori": "^0.19.1",
     "satori-html": "^0.3.2",
+    "sharp": "^0.34.5",
     "svelte": "^5.49.2",
     "tailwindcss": "^4.1.18"
   },
