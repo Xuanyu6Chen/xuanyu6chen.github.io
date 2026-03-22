@@ -18,9 +18,9 @@ A research project to compare AI-related course syllabi across institutions and 
 - **Conversion (PDF → text):** Convert PDFs to normalized text.
 - **Extraction (LLM-assisted):** Extract and normalize AI-related course policy into a structured schema.
 - **Dataset build (JSONL):** Build one JSONL record per syllabus.
-- **Fine-tuning (NEXT):** LoRA fine-tune an instruction-following model on a labeled subset of syllabi to improve policy extraction consistency.
+- **Fine-tuning (IN PROGRESS):** LoRA fine-tune an instruction-following model on a labeled subset of syllabi to improve policy extraction consistency.
 - **Analysis:** Compare policy patterns across schools and departments.
 
 ### Status
 
-In progress: Preparing labeled data and implementing LoRA fine-tuning.
+Finished R1 institutions scraping. Now LoRA fine-tuning the model.
