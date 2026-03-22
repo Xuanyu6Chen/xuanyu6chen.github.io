@@ -37,6 +37,7 @@ First, the supply side. Production plays a huge role in oil prices as it directl
 	*For example, in April 2023, OPEC+ surprised markets with a voluntary cut of 1.16M bpd — Brent jumped from ~$73 to ~$87 within weeks.*
 
 ![OPEC production decisions and oil price impact](/images/oil-markets/opec-production-decisions.png)
+*Fig. 1: OPEC+ production decisions and their impact on oil prices*
 
 2) **US Shale Oil**
 	Besides OPEC, the US also plays a role in oil prices as the swing producer. Shale oil is cheaper and faster to drill than conventional oil, so it can add supply to the market more quickly.
@@ -54,6 +55,7 @@ First, the supply side. Production plays a huge role in oil prices as it directl
 	*In mid-2022, global spare capacity dropped to around 2M bpd (mostly held by Saudi Arabia), which was one reason oil stayed above $100.*
 
 ![Major events alongside oil prices](/images/oil-markets/oil-price-major-events.png)
+*Fig. 2: Major events alongside oil prices*
 
 The chart above shows a holistic view of major events alongside oil prices. All four factors can change the price drastically.
 
@@ -88,6 +90,7 @@ Besides supply and demand, the amount of oil sitting in storage also sends a str
 Oil is priced in USD globally — a system known as the petrodollar, which started with a 1974 US-Saudi deal. Because of this, the US dollar and oil prices **have an inverse relationship**: when the dollar strengthens, oil becomes more expensive for other countries to buy, which reduces demand and pushes prices down. However, as the US has gradually become a net oil exporter, this inverse relationship has weakened in recent years.
 
 ![USD and oil price inverse relationship](/images/oil-markets/usd-oil-inverse-relationship.png)
+*Fig. 3: USD and oil price inverse relationship*
 
 ---
 ## Reading the Spreads
