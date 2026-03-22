@@ -10,10 +10,6 @@ series:
 draft: false
 ---
 
-*Data and images from the [Oil Basics](https://xuanyuchen.com) research notes.*
-
----
-
 Whether you drive or not, you have probably heard the news or scrolled through TikTok saying the oil in California is above $5, even $6 per gallon. The impact is huge and real, but have you ever wondered why the war in the Middle East has such a big impact on the oil price?
 
 This is the first article in a series on oil markets — from oil types and pricing to the recent impact. We will talk about some basics for the crude oil.
@@ -69,7 +65,7 @@ When crude oil is heated in a refinery, different products separate out at diffe
 
 Among all the products, gasoline has become the most popular and plays an important role in the transportation sector as a fuel. That is why flight fuel surcharges and shipping costs increase as crude oil prices rise. Diesel, on the other hand, is the backbone of the global economy and its demand is often used as a proxy for economic activity.
 
-![Fig. 1: What a barrel of crude oil produces after refining](/assets/images/oil-markets/trafigura-crude-oil-breakdown.jpg)
+![Fig. 1: What a barrel of crude oil produces after refining](/images/oil-markets/trafigura-crude-oil-breakdown.jpg)
 *Fig. 1: What a barrel of crude oil produces after refining (Source: [Trafigura](https://www.trafigura.com/what-we-do/oil-and-petroleum-products/))*
 
 ---
@@ -104,26 +100,26 @@ Oil doesn't flow freely — it travels through a handful of narrow passages call
 
 Located between Oman and Iran, the Strait of Hormuz is the gateway out of the Persian Gulf into the Arabian Sea. An average of **20.9M bpd** flows through here (1H 2025) — that is 20% of global petroleum consumption and one quarter of all maritime oil trade passing through a single narrow strait.
 
-![Fig. 2: Daily oil flow through the Strait of Hormuz](/assets/images/oil-markets/hormuz-flow.png)
+![Fig. 2: Daily oil flow through the Strait of Hormuz](/images/oil-markets/hormuz-flow.png)
 *Fig. 2: Daily oil flow through the Strait of Hormuz (Source: [EIA](https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints))*
 
 What makes Hormuz so critical is that there is no good alternative. If the strait were closed, existing alternatives could only reroute a fraction of that volume.
 
 Saudi Arabia sends more oil through Hormuz than any other country, with 89% of it heading to Asian markets — primarily China, India, Japan, and South Korea.
 
-![Fig. 3: Top destinations of oil exported through the Strait of Hormuz](/assets/images/oil-markets/hormuz-destinations.png)
+![Fig. 3: Top destinations of oil exported through the Strait of Hormuz](/images/oil-markets/hormuz-destinations.png)
 *Fig. 3: Top destinations of oil exported through the Strait of Hormuz (Source: [EIA](https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints))*
 
 #### Strait of Malacca
 
 If Hormuz is where oil leaves the Middle East, the Strait of Malacca is where it arrives in Asia. Linking the Indian Ocean to the Pacific, it is the main corridor for Middle Eastern oil reaching East Asia — and at **23.2M bpd** (1H 2025), it is the largest chokepoint in the world by volume, equivalent to 29% of total maritime oil flows.
 
-![Fig. 4: Daily oil flow through the Strait of Malacca](/assets/images/oil-markets/malacca-flow.png)
+![Fig. 4: Daily oil flow through the Strait of Malacca](/images/oil-markets/malacca-flow.png)
 *Fig. 4: Daily oil flow through the Strait of Malacca (Source: [EIA](https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints))*
 
 As shown below, the vast majority of oil moving through Malacca originates from the Middle East and flows directly into East Asian economies.
 
-![Fig. 5: Origin and destination of oil flows through the Strait of Malacca](/assets/images/oil-markets/malacca-destinations.png)
+![Fig. 5: Origin and destination of oil flows through the Strait of Malacca](/images/oil-markets/malacca-destinations.png)
 *Fig. 5: Origin and destination of oil flows through the Strait of Malacca (Source: [EIA](https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints))*
 
 ---
