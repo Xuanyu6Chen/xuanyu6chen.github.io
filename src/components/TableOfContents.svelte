@@ -83,7 +83,7 @@
               ? 'text-primary font-bold'
               : 'text-muted-foreground/80'}
           >
-            {heading.text}
+            {heading.text.replace(/^#\s*/, '')}
           </span>
         </a>
       {/each}
